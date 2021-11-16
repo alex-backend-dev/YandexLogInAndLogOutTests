@@ -15,7 +15,6 @@ namespace Yandex_LogIn_LogOut_Tests
             Assert.IsTrue(yandexHomePage?.AtPageByTitle(Constant.Title.YANDEX_HOME_PAGE_TITLE), "Incorrect Title, we are not on a current page");
             yandexHomePage?
                 .ClickOnEnterForm();
-            Assert.IsTrue(yandexHomePage?.AtPageByURL(Constant.Url.YANDEX_PASSPORT_PAGE_URL), "Incorrect URL, we are not on a current page");
             Assert.IsTrue(yandexHomePage?.AtPageByTitle(Constant.Title.YANDEX_PASSPORT_PAGE_TITLE), "Incorrect Title, we are not on a current page");
 
             passportYandexPage?

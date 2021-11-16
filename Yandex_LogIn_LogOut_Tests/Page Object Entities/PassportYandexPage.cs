@@ -10,6 +10,7 @@ namespace Yandex_LogIn_LogOut_Tests.Page_Object_Entities
 
         private IWebElement SearchResultLogin => driver.FindElement(LoginFormSelector);
         private IWebElement SearchResultPassword => driver.FindElement(PasswordFormSelector);
+
         public PassportYandexPage(IWebDriver? driver) : base(driver)
         {
         }

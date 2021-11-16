@@ -44,30 +44,14 @@ namespace Yandex_LogIn_LogOut_Tests.Page_Object_Entities.BasePage_Entity
             return true;
         }
 
-        public bool AtPageByURL(string URL)
+        public bool AtPageByURL(string url)
         {
-            if (driver.Url.Equals(URL))
-            {
-                return true;
-            }
-
-            else
-            {
-                return false;
-            }
+            return driver?.Url == url;
         }
 
-        public bool AtPageByTitle(string Title)
+        public bool AtPageByTitle(string title)
         {
-            if (driver.Title.Equals(Title))
-            {
-                return true;
-            }
-
-            else
-            {
-                return false;
-            }
+            return driver?.Title == title;
         }
     }
 }

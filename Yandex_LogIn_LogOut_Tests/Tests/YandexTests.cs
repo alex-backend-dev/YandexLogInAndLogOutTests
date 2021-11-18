@@ -1,12 +1,24 @@
+using NUnit.Allure.Attributes;
+using NUnit.Allure.Core;
 using NUnit.Framework;
 using Yandex_LogIn_LogOut_Tests.Tests.BaseTest;
+using Allure.Commons;
 
 namespace Yandex_LogIn_LogOut_Tests
 {
     [TestFixture]
+    [AllureNUnit]
+    [AllureDisplayIgnored]
     public class YandexTests : BaseTest
     {
-        [Test]
+        [Test(Description = "Log In and Log Out Yandex")]
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureIssue("ISSUE-1")]
+        [AllureTms("TMS-12")]
+        [AllureOwner("Alexander Ulyanitskiy")]
+        [AllureSuite("PassedSuite")]
+        [AllureSubSuite("NoAssert")]
         public void YandexTest()
         {
             yandexHomePage?
